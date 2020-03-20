@@ -5,18 +5,20 @@ import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
 import CV from '../components/CV';
 import About from '../components/About';
+import Divider from '@material-ui/core/Divider';
 
 const App = (props) => {
   return (
-    <Router>
-    <div className="navbar">
+    <div style={{background:'#fce4ec'}}>
+    <Router >
       <NavBar />
+      <Divider light />
       <Route exact path="/" component={About} />
       <Route exact path="/CV" component={CV} />
       <Route exact path="/Portfolio" component={Portfolio} />
       <Route exact path="/Contact" component={Contact} />
-    </div>
     </Router>
+    </div>
   );
 };
 
