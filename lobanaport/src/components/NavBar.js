@@ -8,6 +8,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import RecentActorsSharpIcon from '@material-ui/icons/RecentActorsSharp';
 import AssignmentTurnedInSharpIcon from '@material-ui/icons/AssignmentTurnedInSharp';
 import AndroidSharpIcon from '@material-ui/icons/AndroidSharp';
+import logo from "../loubana.png"
 
 const useStyles = makeStyles({
   root: {
@@ -21,10 +22,14 @@ const useStyles = makeStyles({
 
    link: {
     padding: '12px',
-    textDecoration: 'none',
-    color: 'grey',
     background:'#000'
+  },
+  imgSt:{
+    width:"90%",
+    height:"90%",
+    padding:"0.40em"
   }
+  
 });
 
 const activeSt={
@@ -48,6 +53,9 @@ function NavBar() {
         <NavLink 
           to="/resume" exact  activeStyle={activeSt}
         > <BottomNavigationAction label="resume" value="resume" icon={<AndroidSharpIcon />} className={classes.nav}/> </NavLink>
+        <NavLink 
+          to="/" exact 
+        ><img src={logo} alt="" className={classes.imgSt}/></NavLink>
         <NavLink 
           to="/Portfolio" exact  activeStyle={activeSt}
         > <BottomNavigationAction label="Portfolio" value="portfolio" icon={<AssignmentTurnedInSharpIcon />} className={classes.nav}/></NavLink>
