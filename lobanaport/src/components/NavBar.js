@@ -47,25 +47,23 @@ function NavBar() {
       <div className={classes.link}>
       <Container maxWidth="sm" >
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <NavLink 
-          to="/" exact  activeStyle={activeSt}
-        > <BottomNavigationAction  label="About" value="about" icon={<InfoIcon />} className={classes.nav} /></NavLink>
-        <NavLink 
-          to="/resume" exact  activeStyle={activeSt}
-        > <BottomNavigationAction label="resume" value="resume" icon={<AndroidSharpIcon />} className={classes.nav}/> </NavLink>
-        <NavLink 
-          to="/" exact 
-        ><img src={logo} alt="" className={classes.imgSt}/></NavLink>
-        <NavLink 
-          to="/Portfolio" exact  activeStyle={activeSt}
-        > <BottomNavigationAction label="Portfolio" value="portfolio" icon={<AssignmentTurnedInSharpIcon />} className={classes.nav}/></NavLink>
-        <NavLink 
-          to="/Contact" exact  activeStyle={activeSt}> 
+        <NavLink to="/" exact  activeStyle={activeSt}>
+          <BottomNavigationAction  label="About" value="about" icon={<InfoIcon />} className={classes.nav} />
+        </NavLink>
+        <NavLink to="/resume" exact  activeStyle={activeSt}> 
+          <BottomNavigationAction label="resume" value="resume" icon={<AndroidSharpIcon />} className={classes.nav}/>
+        </NavLink>
+        <NavLink to="/" exact ><img src={logo} alt="" className={classes.imgSt}/>
+        </NavLink>
+        <NavLink to="/Portfolio" exact  activeStyle={activeSt}> 
+          <BottomNavigationAction label="Portfolio" value="portfolio" icon={<AssignmentTurnedInSharpIcon />} className={classes.nav}/>
+        </NavLink>
+        <NavLink to="/Contact" exact  activeStyle={activeSt}> 
           <BottomNavigationAction label="Contact" value="contact" icon={<RecentActorsSharpIcon />} className={classes.nav} />
-          </NavLink>
-    </BottomNavigation>
-    </Container>
-    </div>
+        </NavLink>
+      </BottomNavigation>
+      </Container>
+      </div>
     )
 }
  
