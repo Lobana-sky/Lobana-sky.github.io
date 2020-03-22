@@ -33,7 +33,7 @@ const useStyles = makeStyles({
 });
 
 const activeSt={
-  background: '#94bbe9'
+  background: 'rgba(206,226,250,0.5)'
 }
 
 function NavBar() {
