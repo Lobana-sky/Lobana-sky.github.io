@@ -8,52 +8,57 @@ import InfoIcon from '@material-ui/icons/Info';
 import RecentActorsSharpIcon from '@material-ui/icons/RecentActorsSharp';
 import AssignmentTurnedInSharpIcon from '@material-ui/icons/AssignmentTurnedInSharp';
 import AndroidSharpIcon from '@material-ui/icons/AndroidSharp';
-const link = {
-  // width: '100px',
-  padding: '12px',
-  // margin: '0 6px 6px',
- 
-  textDecoration: 'none',
-  color: 'grey',
-  background:'#e3f2fd'
-}
 
 const useStyles = makeStyles({
   root: {
     width: 500,
-    background:'#fce4ec'
+    background:'#000'
   },
+  
+  nav: {
+    color:"white"
+   },
+
+   link: {
+    padding: '12px',
+    textDecoration: 'none',
+    color: 'grey',
+    background:'#000'
+  }
 });
+
+const activeSt={
+  background: '#94bbe9'
+}
 
 function NavBar() {
   const classes = useStyles();
-  const [value, setValue] = React.useState('recents');
+  const [value, setValue] = React.useState("about");
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-  // exact style={link} activeStyle={{background: 'red'}}
     return (
-      <div style={link}>
+      <div className={classes.link}>
       <Container maxWidth="sm" >
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-        <NavLink
-          to="/" exact  activeStyle={{background: '#f8bbd0'}}
-        > <BottomNavigationAction  label="About" value="about" icon={<InfoIcon />} /></NavLink>
-        <NavLink
-          to="/CV" exact  activeStyle={{background: '#f8bbd0'}}
-        > <BottomNavigationAction label="CV" value="CV" icon={<AndroidSharpIcon />} /> </NavLink>
-        <NavLink
-          to="/Portfolio" exact  activeStyle={{background: '#f8bbd0'}}
-        > <BottomNavigationAction label="Portfolio" value="portfolio" icon={<AssignmentTurnedInSharpIcon />} /></NavLink>
-        <NavLink
-          to="/Contact" exact  activeStyle={{background: '#f8bbd0'}}
-        > <BottomNavigationAction label="Contact" value="contact" icon={<RecentActorsSharpIcon />} /></NavLink>
+        <NavLink 
+          to="/" exact  activeStyle={activeSt}
+        > <BottomNavigationAction  label="About" value="about" icon={<InfoIcon />} className={classes.nav} /></NavLink>
+        <NavLink 
+          to="/resume" exact  activeStyle={activeSt}
+        > <BottomNavigationAction label="resume" value="resume" icon={<AndroidSharpIcon />} className={classes.nav}/> </NavLink>
+        <NavLink 
+          to="/Portfolio" exact  activeStyle={activeSt}
+        > <BottomNavigationAction label="Portfolio" value="portfolio" icon={<AssignmentTurnedInSharpIcon />} className={classes.nav}/></NavLink>
+        <NavLink 
+          to="/Contact" exact  activeStyle={activeSt}> 
+          <BottomNavigationAction label="Contact" value="contact" icon={<RecentActorsSharpIcon />} className={classes.nav} />
+          </NavLink>
     </BottomNavigation>
     </Container>
     </div>
     )
-  
 }
  
 export default NavBar;

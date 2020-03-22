@@ -9,12 +9,12 @@ import Divider from '@material-ui/core/Divider';
 
 const App = (props) => {
   return (
-    <div style={{background:'#fce4ec'}}>
+    <div >
     <Router >
       <NavBar />
       <Divider light />
       <Route exact path="/" component={About} />
-      <Route exact path="/CV" component={CV} />
+      <Route exact path="/resume" component={CV} />
       <Route exact path="/Portfolio" component={Portfolio} />
       <Route exact path="/Contact" component={Contact} />
     </Router>
