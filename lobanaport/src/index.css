@@ -5,8 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: rgb(247,230,238);
+  /* background: "#000"; */
   background: linear-gradient(90deg, rgba(247,230,238,1) 0%, rgba(206,226,250,1) 100%);
+  /* background-image: url("cv.jpg"); */
+
+  /* background-image: url("cv.jpg"); The image used */
+  /* background-color: #cccccc; Used if the image is unavailable */
+  /* height: 500px; You must set a specified height */
+  /* background-position: center; Center the image */
+  /* background-repeat: no-repeat; Do not repeat the image */
+  /* background-size: cover; Resize the background image to cover the entire container */
+  /* background-image: ; */
 }
 
 code {
