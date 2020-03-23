@@ -37,9 +37,6 @@ const useStyles = makeStyles(theme => ({
         background: 'rgba(206,226,250,0.30)'
         
       },
-      header:{
-       
-      }
   }));
   
 export default function Resume() {

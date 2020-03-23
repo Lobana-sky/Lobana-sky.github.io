@@ -6,12 +6,14 @@ import Contact from '../components/Contact';
 import Resume from '../components/Resume';
 import About from '../components/About';
 import Divider from '@material-ui/core/Divider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
   return (
     <div >
     <Router >
       <NavBar />
+    
       <Divider light />
       <Route exact path="/" component={About} />
       <Route exact path="/resume" component={Resume} />
