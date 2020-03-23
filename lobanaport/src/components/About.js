@@ -15,7 +15,8 @@ const useStyles = makeStyles(theme => ({
     zIndex: 1,
     position: "relative",
     margin: theme.spacing(2),
-    background: 'linear-gradient(90deg, rgba(247,230,238,1) 0%, rgba(206,226,250,1) 100%)',
+    // background: 'linear-gradient(90deg, rgba(247,230,238,1) 0%, rgba(206,226,250,1) 100%)',
+    background: 'rgba(206,226,250,0.30)'
   },
   
 }));
