@@ -1,7 +1,6 @@
 import React from 'react'
 import Container from '@material-ui/core/Container';
 import resume from "../cv.png"
-// import cv from "../cv.jpg"
 import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
@@ -14,7 +13,6 @@ import Slide from "@material-ui/core/Slide";
 const useStyles = makeStyles(theme => ({
     root: {
       width: '100%',
-      // backgroundImage:cv
     },
     heading: {
       fontSize: theme.typography.pxToRem(15),
@@ -22,7 +20,6 @@ const useStyles = makeStyles(theme => ({
       flexShrink: 0,
     },
     all:{
-        // background: 'rgba(206,226,250,0.5)',
         color:"#880e4f"
     },
     secondaryHeading: {
@@ -33,21 +30,15 @@ const useStyles = makeStyles(theme => ({
         zIndex: 1,
         position: "relative",
         margin: theme.spacing(2),
-        // background: 'linear-gradient(90deg, rgba(247,230,238,1) 0%, rgba(206,226,250,1) 100%)',
         background: 'rgba(206,226,250,0.30)'
-        
       },
   }));
-  
 export default function Resume() {
-
   const classes = useStyles();
   const [expanded, setExpanded] = React.useState(false);
-
   const handleChange = panel => (event, isExpanded) => {
     setExpanded(isExpanded ? panel : false);
   };
-
 return (
   // <div style={ {background: 'rgba(206,226,250,0.5)',margin:"4em"}}>
     <Container maxWidth="sm" >

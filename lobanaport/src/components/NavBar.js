@@ -15,11 +15,9 @@ const useStyles = makeStyles({
     width: "100%",
     background:'#000'
   },
-  
   nav: {
     color:"white"
    },
-
    link: {
     padding: '12px',
     background:'#000'
@@ -29,17 +27,13 @@ const useStyles = makeStyles({
     height:"100%",
     padding:"0.40em"
   }
-  
 });
-
 const activeSt={
   background: 'rgba(206,226,250,0.5)'
 }
-
 function NavBar() {
   const classes = useStyles();
   const [value, setValue] = React.useState("about");
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };

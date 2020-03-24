@@ -1,7 +1,6 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
 import aboutme from "../aboutme.png"
-
 import Paper from "@material-ui/core/Paper";
 import Slide from "@material-ui/core/Slide";
 import { makeStyles } from "@material-ui/core/styles";
@@ -11,7 +10,6 @@ const useStyles = makeStyles(theme => ({
     zIndex: 1,
     position: "relative",
     margin: theme.spacing(2),
-    // background: 'linear-gradient(90deg, rgba(247,230,238,1) 0%, rgba(206,226,250,1) 100%)',
     background: 'rgba(206,226,250,0.30)'
   },
   

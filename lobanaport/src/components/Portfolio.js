@@ -9,7 +9,7 @@ import movie from "../movie.png";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import HttpIcon from '@material-ui/icons/Http';
 import mentor from "../mentor.PNG";
-import abbuloka from "../bb.png"
+import abbuloka from "../abbuloka.png"
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -43,16 +43,10 @@ export default function Portfolio() {
 const urlLinks={
   background:"rgba(206,226,250,0.90)",
   color:"#000",
-  // border: "5px solid rgba(206,226,250,0.70)",
-  // padding:"1em",
-  // margin:"1em",
   borderRadius: "3em",
  }
 function ControlledCarousel() {
     const [index, setIndex] = useState(0);
-
-    
-
     const handleSelect = (selectedIndex, e) => {
       setIndex(selectedIndex);
     };
