@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import {HashRouter as Router,Route} from 'react-router-dom';
 import NavBar from '../components/NavBar';
 import Portfolio from '../components/Portfolio';
 import Contact from '../components/Contact';
