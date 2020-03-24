@@ -13,7 +13,6 @@ const App = (props) => {
     <div >
     <Router >
       <NavBar />
-    
       <Divider light />
       <Route exact path="/" component={About} />
       <Route exact path="/resume" component={Resume} />

@@ -12,7 +12,7 @@ import logo from "../loubana.png"
 
 const useStyles = makeStyles({
   root: {
-    width: 500,
+    width: "100%",
     background:'#000'
   },
   
@@ -25,8 +25,8 @@ const useStyles = makeStyles({
     background:'#000'
   },
   imgSt:{
-    width:"90%",
-    height:"90%",
+    width:"100%",
+    height:"100%",
     padding:"0.40em"
   }
   
@@ -53,6 +53,9 @@ function NavBar() {
         <NavLink to="/resume" exact  activeStyle={activeSt}> 
           <BottomNavigationAction label="resume" value="resume" icon={<AndroidSharpIcon />} className={classes.nav}/>
         </NavLink>
+        {/* <NavLink to="/" exact ><img src={logo} alt="" className={classes.imgSt}/>
+          <BottomNavigationAction  />
+        </NavLink> */}
         <NavLink to="/" exact ><img src={logo} alt="" className={classes.imgSt}/>
         </NavLink>
         <NavLink to="/Portfolio" exact  activeStyle={activeSt}> 

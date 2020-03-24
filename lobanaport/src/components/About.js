@@ -7,10 +7,6 @@ import Slide from "@material-ui/core/Slide";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    height: 180,
-  },
- 
   paper: {
     zIndex: 1,
     position: "relative",
