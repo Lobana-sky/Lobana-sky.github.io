@@ -19,6 +19,7 @@
     "react-swipeable-views": "^0.13.9"
   },
   "scripts": {
+    "lint": "eslint some_project_folder *.js",
     "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
