@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Lobana-sky.github.io/portfolio",
+  "homepage": " https://lobana-sky.github.io/portfolio/",
   "name": "lobanaport",
   "version": "0.1.0",
   "private": true,
@@ -19,6 +19,7 @@
     "react-swipeable-views": "^0.13.9"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
