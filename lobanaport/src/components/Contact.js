@@ -30,8 +30,7 @@ export default function Contact() {
             </div>
           </div>
         </Container>
-    )
-}
+          )}
 
 // https://github.com/Lobana-sky
 

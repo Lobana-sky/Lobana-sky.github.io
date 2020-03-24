@@ -12,21 +12,23 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(2),
     background: 'rgba(206,226,250,0.30)'
   },
-  
 }));
 const About = () => {
   const classes = useStyles();
     return (
         <Container maxWidth="sm">
-        <div>
+        <div >
     <div className={classes.wrapper}>
       <Slide direction="left" in={true} mountOnEnter unmountOnExit>
-        <Paper elevation={100} className={classes.paper}>
-        
-    <img src={aboutme} alt="" height="50%" width="100%" style={{margin:'0 auto'}}/>
-      <p>Hello, my name is Lobana Alarabi. I'm a Web Designer Junior.
-        If you have a project or creative need that I can help with,
-        please get in touch.</p>
+        <Paper elevation={100} className={classes.paper} >
+          <img src={aboutme} alt="" height="50%" width="100%" style={{margin:'0 auto'}}/>
+          <div style={{marginTop:"1em"}}>
+          <p>Hello, my name is Lobana Alarabi.A Web Designer Junior.I was born in Aleppo Syria,
+          and now living in Turkey.I studied computer engineering in Aleppo Unevirsity specialize in artificial intelligence.
+          Programing is my life,keeping learning more and more,
+          If you have a project or creative need that I can help with,
+          <a href="#">please get in touch</a>.</p>
+          </div>
         </Paper>
       </Slide>
     </div>
